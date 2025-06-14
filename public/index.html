@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MagusStorm Task Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🪄 MagusStorm Family Task Tracker</h1>
+
+  <div class="task-form">
+    <input type="text" id="taskInput" placeholder="Enter a new task..." />
+    <button onclick="addTask()">Add Task</button>
+  </div>
+
+  <hr>
+<h2>🗓️ Family Calendar</h2>
+
+<!--
+The src below can be modified to point to different calendars
+-->
+<div style="display: flex; justify-content: center;">
+  <iframe 
+    src="https://calendar.google.com/calendar/embed?src=pebjefkdjru274s66doglmhkkkotgo19%40import.calendar.google.com&ctz=UTC"
+    style="border: 0;" 
+    width="800" 
+    height="600" 
+    frameborder="0" 
+    scrolling="no">
+  </iframe>
+</div>
+
+
+
+  <ul id="taskList"></ul>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
